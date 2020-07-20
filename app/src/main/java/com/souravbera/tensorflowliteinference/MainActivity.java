@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         text_output = (TextView) findViewById(R.id.text_out) ;
-        btn_result = (Button) ;
+        btn_result = (Button) findViewById(R.id.btn_result) ;
         xaValue= (TextView) findViewById(R.id.xaVal);
         yaValue= (TextView) findViewById(R.id.yaVal);
         zaValue= (TextView) findViewById(R.id.zaVal);

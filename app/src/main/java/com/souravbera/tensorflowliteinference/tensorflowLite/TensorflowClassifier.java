@@ -18,9 +18,9 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
-//import java.lang.Math;
+
 import java.util.PriorityQueue;
-//import java.util.Random;
+
 
 
 public class TensorflowClassifier implements Classifier {
@@ -62,13 +62,11 @@ public class TensorflowClassifier implements Classifier {
             for (int k = 0; k < 20; k++) {
                 for (int l = 0; l < 3; l++) {
                     input[0][j][k][l]= (float) r.nextInt(high-low)+low;
-//                    input[0][j][k][l] = 200.0f;
                     input[0][j][k][l] = (float) (input[0][j][k][l] / 255.0) * 2 - 1;
                 }
             }
         }
 
-//            labelList=loadLabelList(assetManager, labelPath);
         float[][] result = new float[1][labelList.size()];
         interpreter.run(input, result);
 
