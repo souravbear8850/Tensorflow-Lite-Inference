@@ -859,6 +859,12 @@ id useLogo
 id withText
 id wrap
 id wrap_content
+id xaVal
+id xgVal
+id yaVal
+id ygVal
+id zaVal
+id zgVal
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer cancel_button_image_alpha

@@ -858,6 +858,12 @@ int id useLogo 0x7f0700b4
 int id withText 0x7f0700b5
 int id wrap 0x7f0700b6
 int id wrap_content 0x7f0700b7
+int id xaVal 0x7f0700b8
+int id xgVal 0x7f0700b9
+int id yaVal 0x7f0700ba
+int id ygVal 0x7f0700bb
+int id zaVal 0x7f0700bc
+int id zgVal 0x7f0700bd
 int integer abc_config_activityDefaultDur 0x7f080000
 int integer abc_config_activityShortDur 0x7f080001
 int integer cancel_button_image_alpha 0x7f080002
