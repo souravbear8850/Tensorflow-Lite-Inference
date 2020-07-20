@@ -52,8 +52,8 @@ public class TensorflowClassifier implements Classifier {
         Random r= new Random();
         List<String> labelList = classifier.labelList;
         Interpreter interpreter = classifier.interpreter;
-        int high=150;
-        int low=255;
+        int high=255;
+        int low=100;
 
         float[][][][] input = new float[1][20][20][3];
 
