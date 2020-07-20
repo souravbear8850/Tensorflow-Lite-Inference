@@ -64,14 +64,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="model_out"
+        android:text="Model output"
         android:layout_weight="1"
-        android:id="@+id/model_out"/>
+        android:id="@+id/text_out"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Model-Inference"
-        android:id="@+id/inference"/>
+        android:id="@+id/btn_result"/>
 
 
 </LinearLayout>

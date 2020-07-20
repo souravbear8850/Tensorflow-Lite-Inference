@@ -15,10 +15,11 @@ import java.io.InputStreamReader;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.util.ArrayList;
-//import java.util.Comparator;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Random;
 //import java.lang.Math;
-//import java.util.PriorityQueue;
+import java.util.PriorityQueue;
 //import java.util.Random;
 
 
@@ -47,24 +48,25 @@ public class TensorflowClassifier implements Classifier {
     }
 
 
-    public float[][] recognizeImage(float[][][][] input_data) {
-
+    public float[][] recognizeImage() {
+        Random r= new Random();
         List<String> labelList = classifier.labelList;
         Interpreter interpreter = classifier.interpreter;
+        int high=150;
+        int low=255;
+
+        float[][][][] input = new float[1][20][20][3];
 
 
-        float[][][][] input = input_data;
-
-
-//        for (int j = 0; j < 20; j++) {
-//            for (int k = 0; k < 20; k++) {
-//                for (int l = 0; l < 3; l++) {
-//                    input[0][j][k][l]= (float) r.nextInt(high-low)+low;
-////                    input[0][j][k][l] = 200.0f;
-//                    input[0][j][k][l] = (float) (input[0][j][k][l] / 255.0) * 2 - 1;
-//                }
-//            }
-//        }
+        for (int j = 0; j < 20; j++) {
+            for (int k = 0; k < 20; k++) {
+                for (int l = 0; l < 3; l++) {
+                    input[0][j][k][l]= (float) r.nextInt(high-low)+low;
+//                    input[0][j][k][l] = 200.0f;
+                    input[0][j][k][l] = (float) (input[0][j][k][l] / 255.0) * 2 - 1;
+                }
+            }
+        }
 
 //            labelList=loadLabelList(assetManager, labelPath);
         float[][] result = new float[1][labelList.size()];
