@@ -741,6 +741,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btn_Result
 id buttonPanel
 id center_vertical
 id chains
@@ -772,7 +773,6 @@ id icon
 id icon_group
 id ifRoom
 id image
-id inference
 id info
 id invisible
 id italic
@@ -783,7 +783,6 @@ id listMode
 id list_item
 id message
 id middle
-id model_out
 id multiply
 id never
 id none
@@ -846,6 +845,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id text_out
 id time
 id title
 id titleDividerNoCustom
@@ -859,12 +859,6 @@ id useLogo
 id withText
 id wrap
 id wrap_content
-id xaVal
-id xgVal
-id yaVal
-id ygVal
-id zaVal
-id zgVal
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer cancel_button_image_alpha

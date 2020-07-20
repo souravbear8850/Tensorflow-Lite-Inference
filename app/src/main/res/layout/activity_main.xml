@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,65 +14,75 @@
 
 
         />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="xaValue"
-            android:id="@+id/xaVal"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="yaValue"
-            android:id="@+id/yaVal"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="zaValue"
-            android:id="@+id/zaVal"/>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="xValue"
-            android:id="@+id/xgVal"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="yValue"
-            android:id="@+id/ygVal"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="zValue"
-            android:id="@+id/zgVal"/>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
 
-    </LinearLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/xaVal"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="xAccValue" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/yaVal"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="yAccValue" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/zaVal"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="zAccValue" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/xgVal"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="xGyroValue" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/ygVal"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="yGyroValue" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/zgVal"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="zGyroValue" />-->
+
+<!--    </LinearLayout>-->
+
     <TextView
+        android:id="@+id/text_out"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="model_out"
         android:layout_weight="1"
-        android:id="@+id/model_out"/>
+        android:text="Model output" />
+
     <Button
+        android:id="@+id/btn_Result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Model-Inference"
-        android:id="@+id/inference"/>
+        android:text="Model Inference" />
 
 
 </LinearLayout>
