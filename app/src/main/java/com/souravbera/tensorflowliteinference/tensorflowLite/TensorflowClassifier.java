@@ -25,10 +25,10 @@ import java.util.PriorityQueue;
 
 public class TensorflowClassifier implements Classifier {
 
-//    private static final int MAX_RESULTS = 3;
-//    private static final int BATCH_SIZE = 1;
-//    private static final int PIXEL_SIZE = 3;
-//    private static final float THRESHOLD = 0.1f;
+    private static final int MAX_RESULTS = 3;
+    private static final int BATCH_SIZE = 1;
+    private static final int PIXEL_SIZE = 3;
+    private static final float THRESHOLD = 0.1f;
     private static TensorflowClassifier classifier = new TensorflowClassifier();
 
     private Interpreter interpreter;
@@ -61,7 +61,7 @@ public class TensorflowClassifier implements Classifier {
         for (int j = 0; j < 20; j++) {
             for (int k = 0; k < 20; k++) {
                 for (int l = 0; l < 3; l++) {
-                    input[0][j][k][l]= (float) r.nextInt(high-low)+low;
+                    input[0][j][k][l]= (float) r.nextInt(high -low)+low;
                     input[0][j][k][l] = (float) (input[0][j][k][l] / 255.0) * 2 - 1;
                 }
             }
