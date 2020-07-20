@@ -7,7 +7,6 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.util.Log;
-import android.widget.TextView;
 
 import com.souravbera.tensorflowliteinference.tensorflowLite.Classifier;
 import com.souravbera.tensorflowliteinference.tensorflowLite.TensorflowClassifier;
@@ -72,7 +71,6 @@ public class SensorRawDataAG  {
                         acc = (float) Math.sqrt(sAccEvent.values[0] * sAccEvent.values[0] + sAccEvent.values[1] * sAccEvent.values[1] + sAccEvent.values[2] * sAccEvent.values[2]);
                         if(countx<10){
                             if(county<10) {
-//                                storeData(countx, county, sAccEvent.values[0], sAccEvent.values[1], sAccEvent.values[2], sGyroEvent.values[0], sGyroEvent.values[1], sGyroEvent.values[2]);
                                 data[0][countx][county][0]=sAccEvent.values[0];
                                 data[0][countx][county][1]=sAccEvent.values[1];
                                 data[0][countx][county][2]=sAccEvent.values[0];
